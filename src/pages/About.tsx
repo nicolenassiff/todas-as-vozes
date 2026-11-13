@@ -1,4 +1,3 @@
-import campaignImage from '../assets/todas-as-vozes.jpg'
 import { PageIntro } from '../components/PageIntro'
 
 export function About() {
@@ -14,7 +13,7 @@ export function About() {
         <div className="mx-auto max-w-[1280px]">
           <div className="grid border-2 border-[#073f3a] lg:grid-cols-2">
             <img
-              src={campaignImage}
+              src="/todas-as-vozes.jpg"
               alt="Identidade visual da Chapa 2 Todas as Vozes"
               className="h-full min-h-[480px] w-full object-cover"
             />

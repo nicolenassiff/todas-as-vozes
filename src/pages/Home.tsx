@@ -2,7 +2,6 @@
 import type { CSSProperties } from 'react'
 import { Icon } from '../components/Icon'
 import { axes } from '../data/proposals'
-import campaignImage from '../assets/todas-as-vozes.jpg'
 
 export function Home() {
   return (
@@ -44,7 +43,7 @@ export function Home() {
             <div className="absolute -inset-3 rotate-3 bg-[#ef5b3f]" />
 
             <img
-              src={campaignImage}
+              src="/todas-as-vozes.jpg"
               alt="Arte da Chapa 2 Todas as Vozes"
               className="relative aspect-[4/5] w-full -rotate-2 object-cover object-center shadow-[12px_12px_0_#073f3a]"
             />

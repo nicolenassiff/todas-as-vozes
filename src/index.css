@@ -257,7 +257,7 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgb(167 201 0 / 89%), rgb(167 201 0 / 89%)), url("./assets/todas-as-vozes.jpg");
+    linear-gradient(rgb(167 201 0 / 89%), rgb(167 201 0 / 89%)), url('/todas-as-vozes.jpg');
   background-position: center;
   background-size: cover;
   content: "";

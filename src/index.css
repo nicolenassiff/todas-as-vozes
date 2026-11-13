@@ -277,3 +277,8 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #ef5b3f;
+  outline-offset: 3px;
+}

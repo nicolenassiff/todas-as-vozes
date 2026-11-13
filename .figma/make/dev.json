@@ -1,6 +1,0 @@
-{
-  "installOn": [
-    "package.json"
-  ],
-  "restartOn": []
-}

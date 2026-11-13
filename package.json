@@ -1,11 +1,12 @@
+
 {
-  "name": "figma-make-app",
+  "name": "todas-as-vozes",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "format": "oxfmt"
   },
@@ -23,5 +24,8 @@
     "oxfmt": "^0.76.0",
     "typescript": "^5.7.0",
     "vite": "^8.0.5"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   }
 }

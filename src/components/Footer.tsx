@@ -33,7 +33,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://www.instagram.com/p/Dfp33NNPHl0/"
+            href="https://www.instagram.com/todasasvozesuniville/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-[#ef5b3f] hover:underline"

@@ -39,7 +39,8 @@ export function Contact() {
 
       <section className="px-5 pt-6 pb-20 md:px-8 md:pt-8">
         <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-          {/* Apresentação */}
+
+          {/* APRESENTAÇÃO E CONTATOS */}
           <div>
             <div className="border-l-[6px] border-[#ef5b3f] pl-5">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-[#ef5b3f]">
@@ -57,6 +58,125 @@ export function Contact() {
               ou envie suas dúvidas.
             </p>
 
+            {/* CONTATOS DIRETOS */}
+            <div className="mt-10">
+              <h3 className="font-poster text-2xl uppercase tracking-[-0.03em] text-[#073f3a]">
+                Nossos canais
+              </h3>
+
+              <p className="mt-2 text-sm leading-6 text-[#53655e]">
+                Prefere falar diretamente com a gente?
+                Entre em contato pelos nossos canais oficiais.
+              </p>
+
+              <div className="mt-5 space-y-3">
+
+                {/* INSTAGRAM */}
+                <a
+                  href="https://www.instagram.com/todasasvozesuniville/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-4 border-2 border-[#073f3a] bg-[#f8f7e8] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#a7c900]"
+                >
+                  <span className="grid size-12 shrink-0 place-items-center bg-[#ef5b3f] text-[#fff6dc]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                      />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle
+                        cx="17.5"
+                        cy="6.5"
+                        r="1"
+                        fill="currentColor"
+                        stroke="none"
+                      />
+                    </svg>
+                  </span>
+
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-xs font-black uppercase tracking-wider text-[#ef5b3f]">
+                      Instagram
+                    </span>
+
+                    <span className="mt-1 block break-all text-sm font-bold text-[#073f3a]">
+                      @todasasvozesuniville
+                    </span>
+                  </span>
+
+                  <span
+                    className="text-xl font-black text-[#073f3a] transition-transform group-hover:translate-x-1"
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
+                </a>
+
+                {/* E-MAIL */}
+                <a
+                  href="mailto:todasasvozesuniville@gmail.com"
+                  className="group flex items-center gap-4 border-2 border-[#073f3a] bg-[#f8f7e8] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#a7c900]"
+                >
+                  <span className="grid size-12 shrink-0 place-items-center bg-[#073f3a] text-[#f1f4d0]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="2"
+                        y="4"
+                        width="20"
+                        height="16"
+                        rx="2"
+                      />
+                      <path d="m2 6 10 7 10-7" />
+                    </svg>
+                  </span>
+
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-xs font-black uppercase tracking-wider text-[#ef5b3f]">
+                      E-mail
+                    </span>
+
+                    <span className="mt-1 block break-all text-sm font-bold text-[#073f3a]">
+                      todasasvozesuniville@gmail.com
+                    </span>
+                  </span>
+
+                  <span
+                    className="text-xl font-black text-[#073f3a] transition-transform group-hover:translate-x-1"
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            {/* BLOCO DA CHAPA */}
             <div className="mt-8 border-2 border-[#073f3a] bg-[#a7c900] p-6">
               <span className="font-poster text-5xl text-[#073f3a]">
                 02
@@ -69,7 +189,7 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Formulário */}
+          {/* FORMULÁRIO */}
           <div className="border-2 border-[#073f3a] bg-[#f8f7e8] p-6 md:p-10">
             <div className="mb-8 border-b-2 border-[#073f3a] pb-5">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-[#ef5b3f]">

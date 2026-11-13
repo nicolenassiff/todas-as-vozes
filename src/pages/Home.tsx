@@ -28,7 +28,7 @@ export function Home() {
 
             <div className="mt-9 flex flex-wrap gap-3">
               <a href="#/propostas" className="button-dark">
-                Conheça as 22 propostas
+                Conheça as 23 propostas
                 <Icon name="arrow" size={18} />
               </a>
 
@@ -77,8 +77,8 @@ export function Home() {
 
               <div className="mt-10 grid grid-cols-3 border-2 border-[#a7c900]">
                 {[
-                  ['22', 'propostas'],
-                  ['05', 'eixos'],
+                  ['23', 'propostas'],
+                  ['06', 'eixos'],
                   ['01', 'voz coletiva'],
                 ].map(([value, label]) => (
                   <div
@@ -112,7 +112,7 @@ export function Home() {
               </span>
 
               <h2 className="font-poster mt-3 text-5xl uppercase tracking-[-0.05em] text-[#073f3a] md:text-7xl">
-                Cinco eixos
+                Seis eixos
               </h2>
             </div>
 
@@ -130,7 +130,9 @@ export function Home() {
                 key={axis.id}
                 href={`#/propostas?eixo=${encodeURIComponent(axis.id)}`}
                 className={`axis-card group block cursor-pointer transition-transform duration-200 hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#ef5b3f] ${
-                  index === axes.length - 1 ? 'md:col-span-2' : ''
+                  axes.length % 2 !== 0 && index === axes.length - 1
+                  ? 'md:col-span-2'
+                  : ''
                 }`}
                 style={{ '--accent': axis.color } as CSSProperties}
                 aria-label={`Ver propostas do eixo ${axis.title}`}

@@ -1,12 +1,12 @@
 
-export const GOOGLE_FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLScgtqQLZ4Z6441KgW_m3CV-ZmwMgTXipyEPSR5lQbOwdKObXA/viewform'
+const GOOGLE_FORM_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdJp3gmNxazNLnIDYi-bt5D6WD349hvhXV2p0HZIjEPhBXPpw/viewform'
 
 export const GOOGLE_FORM_FIELDS = {
-  nome: 'entry.154179192',
-  curso: 'entry.1417712739',
-  assunto: 'entry.635694110',
-  mensagem: 'entry.1984206356',
+  nome: 'entry.620507525',
+  curso: 'entry.1111572026',
+  assunto: 'entry.465113886',
+  mensagem: 'entry.195992010',
 }
 
 export function createGoogleFormLink(data: {

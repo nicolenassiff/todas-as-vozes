@@ -269,4 +269,25 @@ export const axes: Axis[] = [
       },
     ],
   },
+  {
+    id: 'polo-sao-francisco-do-sul',
+    number: '06',
+    title: 'Polo São Francisco do Sul',
+    subtitle: 'Representação estudantil e melhorias na infraestrutura do polo',
+    color: '#024a43',
+    proposals: [
+      {
+        number: 23,
+        title: 'Representação do Polo São Francisco do Sul',
+        summary:
+          'O polo poderá eleger uma representação estudantil para fortalecer a busca por suas reivindicações.',
+        details: [
+          'Reivindicar o asfaltamento do estacionamento.',
+          'Buscar a construção do auditório do polo.',
+          'Reivindicar a cobertura do trajeto entre o estacionamento e as salas de aula, para proteger os estudantes nos dias de chuva.',
+        ],
+      },
+    ],
+  }
+
 ]

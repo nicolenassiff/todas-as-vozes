@@ -4,31 +4,30 @@ import { Wordmark } from './Wordmark'
 export function Footer() {
   return (
     <footer className="border-t-2 border-[#073f3a] bg-[#a7c900] px-5 py-5 md:px-8">
-      <div className="mx-auto flex max-w-[1280px] flex-col gap-5 md:flex-row md:items-center md:justify-between md:gap-8">
+      <div className="mx-auto max-w-[1280px]">
 
-        {/* Logo */}
-        <div className="shrink-0">
+        {/* Primeira linha: logo e descrição */}
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
           <Wordmark />
+
+          <p className="max-w-xs text-xs font-semibold leading-5 text-[#244b45] sm:text-right">
+            Representação, participação, acolhimento e vida universitária.
+          </p>
         </div>
 
-        {/* Descrição */}
-        <p className="max-w-xs text-xs font-semibold leading-5 text-[#244b45]">
-          Representação, participação, acolhimento e vida universitária.
-        </p>
+        {/* Divisória */}
+        <div className="my-4 border-t border-[#073f3a]/25" />
 
-        {/* Contatos */}
-        <div className="flex flex-col gap-1 text-left md:items-end md:text-right">
-          <p className="text-sm font-black uppercase tracking-wider text-[#ef5b3f]">
-            Chapa 2
-          </p>
+        {/* Segunda linha: contatos centralizados */}
+        <div className="flex flex-col items-center justify-center gap-2 text-center text-xs font-semibold text-[#073f3a] sm:flex-row sm:flex-wrap sm:gap-6">
 
-          <p className="text-xs font-bold text-[#073f3a]">
-            DCE Univille
-          </p>
+          <span className="font-black uppercase tracking-wider text-[#ef5b3f]">
+            Chapa 2 · DCE Univille
+          </span>
 
           <a
             href="mailto:todasasvozesuniville@gmail.com"
-            className="mt-1 break-all text-xs font-semibold text-[#073f3a] hover:text-[#ef5b3f] hover:underline"
+            className="break-all transition-colors hover:text-[#ef5b3f] hover:underline"
           >
             todasasvozesuniville@gmail.com
           </a>
@@ -37,10 +36,11 @@ export function Footer() {
             href="https://www.instagram.com/p/Dfp33NNPHl0/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-bold text-[#073f3a] hover:text-[#ef5b3f] hover:underline"
+            className="transition-colors hover:text-[#ef5b3f] hover:underline"
           >
-            Instagram da Chapa 2 ↗
+            Instagram ↗
           </a>
+
         </div>
       </div>
     </footer>

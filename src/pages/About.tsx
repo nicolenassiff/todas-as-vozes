@@ -1,5 +1,6 @@
 
 import { PageIntro } from '../components/PageIntro'
+import { TeamCarousel } from '../components/TeamCarousel'
 
 export function About() {
   return (
@@ -44,7 +45,7 @@ export function About() {
           </div>
 
           {/* COMO VAMOS FAZER */}
-          <div className="grid gap-8 py-20 md:grid-cols-[0.4fr_0.6fr]">
+          <div className="grid gap-8 pt-16 pb-6 md:pt-20 md:pb-8 md:grid-cols-[0.4fr_0.6fr]">
             <h2 className="font-poster text-5xl uppercase tracking-[-0.05em] text-[#073f3a] md:text-6xl">
               Como vamos fazer
             </h2>
@@ -95,6 +96,8 @@ export function About() {
           </div>
         </div>
       </section>
+        {/* CARROSSEL DOS INTEGRANTES */}
+        <TeamCarousel />
     </>
   )
 }
